@@ -1,19 +1,36 @@
 exports.credentials = {
-    InvalidCredential: {
+    InvalidTextCredential: {
         text: 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',
-        name: 'Create Item'
+        name: 'Create Item',
+        type: 'create',
+        filePath: './test/config/pic.jpg',
+        validation: true
+    },
+    InvalidPictureCredential: {
+        text: 'text',
+        name: 'Create Item',
+        type: 'create',
+        filePath: './test/config/pic-fail.jpg',
+        validation: true
     },
     validCredential: {
-        text: 'Will is hunted by a strange entity whereas his friends search for him only to find a lonely girl in the woods.',
-        name: 'Create Item'
+        text: 'testing text area',
+        name: 'Create Item',
+        type: 'create',
+        filePath: './test/config/pic.jpg',
+        validation: false
     },
     updateCredential: {
-        text: 'Will is hunted',
-        name: 'Update Item'
+        text: 'Will is hunted - update',
+        name: 'Edit',
+        type: 'update',
+        filePath: './test/config/pic-update.jpg',
+        validation: false
     },
     deleteItemCredential: {
-        text: 'Will is hunted',
-        name: 'Delete'
+        text: 'testing text area',
+        name: 'Delete',
+        type: 'delete'
     }
 
 }

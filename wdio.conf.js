@@ -2,9 +2,15 @@ const type = process.env.TYPE;
 const capa = require('./test/config/capa')
 const capability = Object.values(capa[type]);
 exports.config = {
+    path:'/',
     runner: 'local',
     specs: [
-        'test/specs/**.js'
+        'test/specs/check.item.js',
+        'test/specs/delete.item.js',
+        'test/specs/create.item.valid.credentials.js',
+        'test/specs/create.item.invalid.picture.js',
+        'test/specs/create.item.invalid.text.js',
+        'test/specs/update.item.form.item.js'
     ],
     // Patterns to exclude.
     exclude: [

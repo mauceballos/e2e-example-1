@@ -1,10 +1,9 @@
 const HomePage = require('../pageobjects/Home.page');
-const ItemDetailPage = require('../pageobjects/Item.Detail.page');
 let testData = require('../entities/credentials').credentials.validCredential;
-describe('My Create Item', () => {
+
+describe('1- Create an item ', () => {
     it('should Create Item with valid text', () => {
         HomePage.open();
-        HomePage.getHomePage(1);
-        ItemDetailPage.CreateItem(testData.text, testData.name);
+        HomePage.getHomePage(testData);
     });
 });

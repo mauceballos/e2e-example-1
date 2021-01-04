@@ -22,11 +22,13 @@ mobile :[{
     browserName: "chrome",
     'goog:chromeOptions': {
         mobileEmulation: {
-            // deviceName: 'Pixel 2'
-            deviceName: 'iPad Pro'
+            deviceName: 'Pixel 2'
             // deviceName: 'iPhone X'
         },
-        args: ['--incognito', '--auto-open-devtools-for-tabs', "--disable-web-security"]
+        args: ['--incognito', 
+        // '--auto-open-devtools-for-tabs', 
+        "--disable-web-security"
+    ]
     }
 }]
 };
